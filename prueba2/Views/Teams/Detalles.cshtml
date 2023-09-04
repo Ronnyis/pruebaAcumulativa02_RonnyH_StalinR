@@ -1,0 +1,50 @@
+﻿@model prueba2.Models.Team
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>@Html.DisplayFor(model => model.name)</h2>
+
+<div>
+    <img src="@Model.logo" />
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Código
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.code)
+        </dd>
+
+        <dt>
+            País
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.country)
+        </dd>
+
+        <dt>
+            Fundación
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.founded)
+        </dd>
+
+        <dt>
+            Nacional
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.national)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Regresar", "Index")
+</p>
+
+
